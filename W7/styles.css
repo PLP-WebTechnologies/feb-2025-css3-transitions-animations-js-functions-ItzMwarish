@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(206, 217, 241);
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+body.dark {
+  background-color: #054152;
+  color: #f4f4f4;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
